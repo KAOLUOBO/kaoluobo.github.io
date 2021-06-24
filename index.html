@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./static/libs/scrollReveal/scrollreveal.min.js"></script>
+    <!-- 引入font-awesome依赖 -->
+    <link
+      href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/libs/glide/glide.core.min.css" />
+    <link rel="stylesheet" href="./static/libs/glide/glide.theme.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>贺灵奇 - Coder</title>
+  </head>
+  <body>
+    <!-- 网页头部 -->
+    <header>
+      <div class="logo">个人简介</div>
+      <nav>
+        <a href="#home">首页</a>
+        <a href="#about-us">开发领域</a>
+        <a href="#showcases">参与项目</a>
+        <a href="#team-intro">技术栈</a>
+        <!-- <a href="#"><i class="fas fa-search"></i></a> -->
+      </nav>
+      <div class="burger">
+        <div class="burger-line1"></div>
+        <div class="burger-line2"></div>
+        <div class="burger-line3"></div>
+      </div>
+    </header>
+    <div id="home" class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <div class="glide__slides">
+          <!-- 轮播图一 -->
+          <div class="glide__slide">
+            <div class="slide-caption left">
+              <h1>大家好,我是代码练习生贺灵奇</h1>
+              <h3>前端开发练习时长一年半</h3>
+              <button class="explore-btn">查看更多</button>
+            </div>
+            <div class="backdrop"></div>
+            <img src="./static/images/index.jpg" />
+          </div>
+          <div class="glide__slide">
+            <div class="slide-caption left">
+              <h1>热爱技术,热爱生活</h1>
+              <h3></h3>
+              <button class="explore-btn">查看更多</button>
+            </div>
+            <div class="backdrop"></div>
+            <video src="./static/videos/demo.mp4" muted autoplay loop></video>
+          </div>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <i class="fa fa-angle-left"></i>
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <i class="fa fa-angle-right"></i>
+          </button>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <section id="about-us" class="about-us">
+        <h2 class="title1">开发领域</h2>
+        <div class="intro"></div>
+        <div class="features">
+          <div class="feature">
+            <i class="fas fa-mobile-alt"></i>
+            <h4 class="feature-title">移动端</h4>
+            <p class="feature-content">Android、Uni-app、小程序</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-desktop"></i>
+            <h4 class="feature-title">网页</h4>
+            <p class="feature-content">Vue、Element-UI、JQuery</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-database"></i>
+            <h4 class="feature-title">数据库</h4>
+            <p class="feature-content">MySQL、MongoDB</p>
+          </div>
+        </div>
+      </section>
+      <section id="showcases" class="showcases section-bg">
+        <h2 class="title1">参与项目</h2>
+        <div class="filter-btns">
+          <button class="filter-btn active" data-filter="*">全部</button>
+          <button class="filter-btn" data-filter=".mobile">移动端</button>
+          <button class="filter-btn" data-filter=".web">网页端</button>
+          <!-- <button class="filter-btn" data-filter=".science">科研</button> -->
+        </div>
+        <div class="cases">
+          <div class="case-item mobile science">
+            <img src="./static/images/samsung.png" alt="" />
+          </div>
+          <div class="case-item mobile science">
+            <img src="./static/images/qzwh.png" alt="" />
+          </div>
+          <div class="case-item web">
+            <img src="./static/images/3.png" />
+          </div>
+          <div class="case-item web">
+            <img src="./static/images/4.png" />
+          </div>
+          <div class="case-item mobile">
+            <img src="./static/images/gh.jpeg" />
+          </div>
+          <div class="case-item mobile">
+            <img src="./static/images/zt.jpeg" />
+          </div>
+        </div>
+      </section>
+
+      <section id="team-intro" class="team-intro section-bg">
+        <h2 class="title1">技术栈</h2>
+        <div class="team-members">
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./static/images/html5.png" alt="" />
+            </div>
+            <h4 class="name">HTML5</h4>
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./static/images/css.jpeg" alt="" />
+            </div>
+            <h4 class="name">CSS3</h4>
+          </div>
+
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./static/images/js.jpeg" />
+            </div>
+            <h4 class="name">ES6</h4>
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./static/images/jquery.jpeg" />
+            </div>
+            <h4 class="name">Jquery</h4>
+          </div>
+        </div>
+        <div class="team-members">
+          <!-- <div class="team-member">
+            <div class="profile-image">
+              <img src="./static/images/html5.png" alt="" />
+            </div>
+            <h4 class="name">HTML5</h4>
+          </div> -->
+
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./static/images/vue.jpeg" />
+            </div>
+            <h4 class="name">Vue</h4>
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./static/images/xcx.jpeg" />
+            </div>
+            <h4 class="name">小程序</h4>
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./static/images/Android.jpg" alt="" />
+            </div>
+            <h4 class="name">Android</h4>
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./static/images/data.jpeg" alt="" />
+            </div>
+            <h4 class="name">MySQL</h4>
+          </div>
+        </div>
+      </section>
+      <section class="data-section">
+        <div class="data-piece">
+          <i class="fas fa-code"></i>
+          <div class="num">170000+</div>
+          <div class="data-desc">行代码</div>
+        </div>
+
+        <div class="data-piece">
+          <i class="fas fa-user"></i>
+          <div class="num">10000+</div>
+          <div class="data-desc">位用户</div>
+        </div>
+
+        <div class="data-piece">
+          <i class="fas fa-project-diagram"></i>
+          <div class="num">10+</div>
+          <div class="data-desc">个项目</div>
+        </div>
+        <div class="data-piece">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <div class="num">2</div>
+          <div class="data-desc">年互联网经验</div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-menus">
+        <div class="contact-us">
+          <p class="menu-title">联系我</p>
+          <p>电话:18042323341</p>
+          <p>电子邮件：helingqi007@gmail.com</p>
+        </div>
+        <div class="service-menu footer-menu">
+          <p class="menu-title">技术领域</p>
+          <ul class="menu-items">
+            <li><a href="#">移动应用</a></li>
+            <li><a href="#">PC网页</a></li>
+            <li><a href="#">数据库</a></li>
+          </ul>
+        </div>
+        <div class="service-menu footer-menu">
+          <p class="menu-title">成功案例</p>
+          <ul class="menu-items">
+            <li><a href="#">镇海建筑渣土平台</a></li>
+            <li><a href="#">镇海港航小程序</a></li>
+            <li><a href="#">青峙通行填报系统</a></li>
+            <li><a href="#">宁海渣土管理平台</a></li>
+            <li><a href="#">镇海城管精细化</a></li>
+            <li><a href="#">三星重工业TP物流</a></li>
+          </ul>
+        </div>
+        <div class="service-menu footer-menu">
+          <p class="menu-title">技术栈</p>
+          <ul class="menu-items">
+            <li><a href="#">HTML5</a></li>
+            <li><a href="#">CSS3</a></li>
+            <li><a href="#">ES6</a></li>
+            <li><a href="#">Jquery</a></li>
+            <li><a href="#">Vue</a></li>
+            <li><a href="#">小程序</a></li>
+            <li><a href="#">Android</a></li>
+            <li><a href="#">MySQL</a></li>
+          </ul>
+        </div>
+        <div class="service-menu footer-menu">
+          <p class="menu-title">个人博客</p>
+          <ul class="menu-items">
+            <li><a href="#">个人博客</a></li>
+          </ul>
+        </div>
+        <div class="scroll-to-top">
+          <a href="#"><i class="fas fa-chevron-up"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- 引入JS文件 -->
+    <script src="./static/libs/anime/anime.min.js"></script>
+    <script src="./static/libs/glide/glide.min.js"></script>
+    <script src="./static/libs/isotope/isotope.pkgd.min.js"></script>
+    <script src="./static/libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
