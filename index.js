@@ -96,15 +96,17 @@ ScrollReveal().reveal(".data-section", {
       easinge: "easeInExpo",
     });
     dataSectionEl.style.backgroundPosition =
-      "center calc(50% - ${dataSectionEl.getBoundingClientRect().bottom/5}px)";
+      `center calc(50% - ${dataSectionEl.getBoundingClientRect().bottom / 5}px)`;
   },
 });
 
 window.addEventListener("scroll", () => {
   const bottom = dataSectionEl.getBoundingClientRect().bottom;
-  const top = dataSectionEl.getBoundingClientRect.top;
+  const top = dataSectionEl.getBoundingClientRect().top;
+  console.log(bottom);
+  console.log(top);
   if (bottom >= 0 && top <= window.innerHeight) {
-    dataSectionEl.style.backgroundPosition = "center calc(50% - ${bottom/5}px)";
+    dataSectionEl.style.backgroundPosition = `center calc(50% - ${bottom / 5}px)`;
   }
 });
 
@@ -117,7 +119,7 @@ const scroll = new SmoothScroll(
 );
 
 document.addEventListener("scrollStart", () => {
-  if(headerEl.classList.contains("open")) {
+  if (headerEl.classList.contains("open")) {
     headerEl.classList.remove("open");
   }
 })

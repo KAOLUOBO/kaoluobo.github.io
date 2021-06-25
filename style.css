@@ -138,7 +138,7 @@ header.sticky nav i {
   height: 100%;
   left: 0;
   top: 0;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .explore-btn {
@@ -415,8 +415,9 @@ section {
 .data-section {
   max-width: unset;
   width: 100vw;
-  height: 255px;
-  background-image: url(./images/adult-business-computer-contemporary-380769.jpg);
+  height: 300px;
+  /* background-image: url(./images/adult-business-computer-contemporary-380769.jpg); */
+  background-image: url(static/images/bg.jpg);
   background-size: cover;
   background-position: center;
   display: grid;
@@ -723,7 +724,7 @@ footer {
     font-size: 20px;
   }
 
-  .service-item .service-content{
+  .service-item .service-content {
     font-size: 14px;
     line-height: 24px;
   }
@@ -734,14 +735,13 @@ footer {
     column-gap: 6vw;
   }
 
-  .activities{
+  .activities {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 36px;
   }
-
 }
 
-@media(max-width: 992px){
+@media (max-width: 992px) {
   .slide-caption h1 {
     font-size: 48px;
   }
@@ -750,33 +750,34 @@ footer {
     font-size: 18px;
   }
 
-  .features, .services{
-    grid-template-columns: repeat(2,1fr);
+  .features,
+  .services {
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: unset;
   }
 
   .data-section {
-    grid-template-columns: repeat(2,minmax(200px,auto));
+    grid-template-columns: repeat(2, minmax(200px, auto));
     padding: 24px 0;
     height: auto;
     row-gap: 24px;
     background-size: 200%;
   }
 
-  .showcases .case-item{
-    width: calc(100vw/3);
+  .showcases .case-item {
+    width: calc(100vw / 3);
   }
 }
 
-@media(max-width: 768px){
-  section, .footer-menus{
+@media (max-width: 768px) {
+  section,
+  .footer-menus {
     padding: 0 40px;
   }
 
   .footer-menus {
     grid-template-columns: 2fr repeat(2, 1fr);
     row-gap: 24px;
-
   }
 
   .contact-us {
@@ -793,7 +794,7 @@ footer {
     row-gap: 36px;
   }
 
-  .data-section{
+  .data-section {
     grid-template-columns: 1fr;
     background-size: 300%;
   }
@@ -802,17 +803,18 @@ footer {
     grid-template-columns: minmax(200, 400);
   }
 
-  .features, .services{
+  .features,
+  .services {
     grid-template-columns: 1fr;
   }
 
   .showcases .case-item {
-    width: calc(100vw /2);
+    width: calc(100vw / 2);
     height: 30vw;
   }
 }
 
-@media(max-width: 576px){
+@media (max-width: 576px) {
   .slide-caption h1 {
     font-size: 28px;
   }
@@ -821,12 +823,12 @@ footer {
     font-size: 14px;
   }
 
-  .explore-btn{
+  .explore-btn {
     font-size: 14px;
     padding: 8px 18px;
   }
 
-  .showcases .case-item{
+  .showcases .case-item {
     width: 100vw;
     height: 60vw;
   }
@@ -835,7 +837,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .footer-menus{
+  .footer-menus {
     justify-self: start;
     text-align: left;
   }
